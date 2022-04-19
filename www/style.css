@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Alfa+Slab+One&family=Fredoka+One&family=Raleway&family=Righteous&display=swap');
+@import url(https://use.fontawesome.com/releases/v5.7.2/css/all.css);
+
+:root {
+  --background-color: rgba(255, 255, 255);
+  --font-color: rgba(0, 0, 0);
+  font-size: 12px;
+}
+
+body {
+  font-size: 1.25rem;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-weight:400;
+  font-family: 'Righteous', cursive;
+}
+
+.hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border:0;
+  border-top:0;
+}
+
+.control-label {
+  font-size: 1.45rem;
+  font-weight: 300;
+  font-family: 'Righteous', cursive;
+}
+
+.form-control, .action-button {
+  font-size: 1.25rem;
+  border-radius: 0rem;
+}
+
+/* .form-group > label {
+  font-size: 14px;
+} */
+
+.h3 {
+  font-size:18px;
+}
+
+@media (min-width: 1200px) {
+
+  .header-container {
+    margin: auto;
+    width: 1000px;
+    padding-bottom: 2rem;
+    display: flex;
+  }
+
+  .header {
+    font-size: 6rem;
+    font-weight: 400;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    width: 41.5rem;
+    background: #FF4D03;
+  }
+
+  .contact-container {
+    display: flex;
+    margin-left: auto; 
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  .contact-text > a {
+    margin-left: 4rem;
+    font-size: 2.5rem;
+    font-family: 'Righteous', cursive;
+    position: relative;
+    text-decoration: none;
+    color: var(--font-color);
+  }
+
+  .contact-text > a:hover {
+  }
+
+  .contact-text > a:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: .5rem;
+    bottom: 0;
+    left: 0;
+    background-color: #FF4D03;
+    transform: scaleX(0);
+    transform-origin: top left;
+    transition: transform 0.3s ease;
+  }
+
+  .contact-text > a:hover::before {
+    transform: scaleX(1);
+  }
+
+  .container {
+    width: 1000px;
+    position: relative;
+    padding: 2rem;
+    border-top: 0.25rem solid black;
+    border-bottom: 0.25rem solid black;
+  }
+
+  .container:after {
+    content: '';
+    position: absolute;
+    left: 0rem;
+    top: 0%;
+    height: 50%;
+    border-left: 0.25rem solid black;
+  }
+
+  .container:before {
+    content: '';
+    position: absolute;
+    right: 0rem;
+    bottom: 0%;
+    height: 50%;
+    border-right: 0.25rem solid black;
+  }
+
+  .output-container {
+    width: 1000px;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .button-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+  }
+
+  .coordinate-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+  }
+
+  .input-container {
+    margin-left: 3rem;
+  }
+
+  .instruction-container {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  .instruction-text {
+    width: 700px;
+    border-bottom-style: solid;
+    border-color: #FF4D03;
+  }
+
+  .instruction-text:after {
+    width: 700px;
+    border-bottom-style: solid;
+    border-color: #FF4D03;
+  }
+
+  .instruction-icon {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-group {
+    margin-bottom: 0rem;
+  }
+
+  .text-container {
+    display: flex;
+    align-items: flex-end;
+    font-size: 2rem;
+    font-family: 'Righteous', cursive;
+    width: 0.5em;
+  }
+
+  .button-run-circle {
+    font-size: 2.5rem;
+    font-family: 'Righteous', cursive;
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: #276EAC;
+    border-radius: 50%;
+    padding: 0 0;
+    color: white;
+    top: 10%;
+    left: 10%;
+    -webkit-transform: translateZ(0);
+    transform: scale(.85) translateZ(0);
+    -webkit-transition: transform 400ms;
+    transition: transform 400ms;
+  }
+
+  .button-run-circle:hover {
+    transform: scale(1);
+    background-color: #0479b5;
+    color: white;
+  }
+
+  .button-run-circle:hover:focus:active:after {
+    background-color: #0479b5;
+    color: white;
+  }
+
+  .fun-icons {
+    line-height: 5.5rem;
+    right: 5.5rem;
+    position: absolute;
+  }
+
+  .fun-icons > * {
+    height: 4rem;
+    margin-left: 1rem;
+    transition: 0.9s;
+  }
+
+  .fun-icons img:nth-child(2):hover {
+    transition: 0.9s;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg);
+  }
+
+  .fa {
+    transition: 0.9s;
+    font-weight: 900;
+    font-size: 5rem;
+    color: #0479b5;
+    backface-visibility: hidden;
+  }
+
+  .fa:hover {
+    transition: 0.9s;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg);
+  }
+
+}

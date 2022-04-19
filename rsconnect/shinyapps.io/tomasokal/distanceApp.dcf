@@ -1,0 +1,13 @@
+name: distanceApp
+title: distanceApp
+username:
+account: tomasokal
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6121379
+bundleId: 5813723
+url: https://tomasokal.shinyapps.io/distanceApp/
+when: 1650375989.00142
+lastSyncTime: 1650375989.00142
+asMultiple: FALSE
+asStatic: FALSE
